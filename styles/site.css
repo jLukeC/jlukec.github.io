@@ -1,6 +1,10 @@
 body {
     font-family: 'Anonymous Pro';
     font-size: 25px;
+    color: #444;
+    background-color: #eeeeee;
+    margin: auto;
+    width: 50%;
 }
 
 a {
