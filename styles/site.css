@@ -1,15 +1,22 @@
+html { 
+    background: url(/matterhorn_primative.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 body {
     font-family: 'Anonymous Pro';
     font-size: 25px;
-    color: #444;
-    background-color: #eeeeee;
+    color: #eeeeee;
     margin: auto;
-    width: 50%;
+    width: 75%;
 }
 
 a {
     font-weight: bold;
-    color: black;
+    color: #DDDDDD;
 }
 
 a:hover {
@@ -66,4 +73,7 @@ a:hover {
 
 #roy-cho {
     width: 100%;
+}
+img {
+    width: 100%
 }
