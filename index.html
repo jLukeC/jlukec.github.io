@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -42,6 +44,11 @@
         }
 
         h4 {
+            font-size: 20px;
+            margin: 10px 0 10px 0;
+        }
+
+        strong {
             font-size: 18px;
         }
 
@@ -51,6 +58,10 @@
 
         img {
             width: 100%;
+        }
+
+        .wrapper {
+          margin: 0px 10px 0px 10px;
         }
 
         .intro {
@@ -81,6 +92,7 @@
             float: left;
             height: 250px;
             width: auto !important;
+            max-width: 33%;
         }
 
         /* Grid */
@@ -124,7 +136,7 @@
                 width: 100%;
             }
             .bottom-images img {
-              width: 100%;
+              width: 100% !important;
               height: initial;
             }
         }
@@ -132,9 +144,10 @@
 </head>
 
 <body>
+  <div class="wrapper">
     <div class="intro">
         <h1>Luke Carlson</h1>
-        <a href="#">projects</a> | <a href="static/resume.pdf">resume</a> | <a href="https://github.com/jLukeC">github</a> | <a href="mailto:jlukecarlson@gmail.com">email</a>
+        <a href="#recent-projects">projects</a> | <a href="static/resume.pdf" target="_blank">resume</a> | <a href="https://github.com/jLukeC" target="_blank">github</a> | <a href="mailto:jlukecarlson@gmail.com">email</a>
 
         <hr>
 
@@ -159,7 +172,7 @@
                 </div>
 
                 <h4>Teaching Experience</h4>
-                <p> This is my fourth year in a teaching role at Penn - currently I am a TA for Penn’s graduate course on <a href="http://www.seas.upenn.edu/~cis521/">artificial intelligence</a>. I was the head project manager for a
+                <p> This is my fourth year in a teaching role at Penn<br>currently I am a TA for Penn’s graduate course on <a href="http://www.seas.upenn.edu/~cis521/">artificial intelligence</a>. I was the head project manager for a
                     graduate course on <a href="http://www.seas.upenn.edu/~cdmurphy/cis573/">software
         design and engineering principles</a> (agile and test-driven development for Android, design patterns, interfacing with clients) for two years and previously taught for a course on <a href="https://www.seas.upenn.edu/~cis120/">programming languages and techniques</a> (functional programming in OCaml, data structures, abstraction).</p>
 
@@ -175,14 +188,14 @@
     <div class="grid">
         <div class="col-2-3">
             <div class="project">
-                <h2>Recent Projects</h2>
-                <h3 id="mlai">ML / AI</h3>
+                <h2 id="recent-projects">Recent Projects</h2>
+                <h3 id="mlai">Machine Learning / Artificial Intelligence</h3>
 
                 <h4>Machine Translation</h4>
                 <div class="sub-projects">
 
                     <p><strong>High-level Typed Relations for Noun Phrase Entity Wikification</strong></p>
-                    <p><strong>Machine Translation Projects in Alignment, Decoding, Evaluation, and Reranking</strong> (Python) [CIS526] - Coursework included the implementation of the following algorithms:</p>
+                    <p><strong>Machine Translation Projects in Alignment, Decoding, Evaluation, and Reranking</strong> (Python) [CIS526]<br>Coursework included the implementation of the following algorithms:</p>
                     <ul>
                         <li>
                             <p><em>IBM Model 1 with Viterbi Alignment</em></p>
@@ -201,61 +214,61 @@
                         </li>
                     </ul>
 
-                    <p><strong>Telugu Work for Machine Translation</strong> (Python) [CIS526] - Gathering data for a widely spoken but low resource language to help the statistical machine translation community. Created a Language Identification system and
+                    <p><strong>Telugu Work for Machine Translation</strong> (Python) [CIS526]<br>Gathering data for a widely spoken but low resource language to help the statistical machine translation community. Created a Language Identification system and
                         Transliteration program from English to Telugu and vice versa.</p>
                 </div>
                 <h4>Computer Vision</h4>
                 <div class="sub-projects">
 
-                    <p><strong>CrowdVision</strong> (Python &amp; Open CV) [Senior Design] - A software system for art gallery curators to examine visitor engagement and quantify interest in art pieces. Created for senior project. Machine Vision in Art Galleries.</p>
+                    <p><strong>CrowdVision</strong> (Python &amp; Open CV) [Senior Design]<br>A software system for art gallery curators to examine visitor engagement and quantify interest in art pieces. Created for senior project. Machine Vision in Art Galleries.</p>
                 </div>
 
                 <h4>Artificial Intelligence</h4>
                 <div class="sub-projects">
-                    <p><strong>Viterbi Alignment (Hidden Markov Models)</strong> (Python) [CIS521] - Implemented the dynamic programming algorithm for finding the most likely state sequence for a given set of observations and a trained Hidden Markov Model.
+                    <p><strong>Viterbi Alignment (Hidden Markov Models)</strong> (Python) [CIS521]<br>Implemented the dynamic programming algorithm for finding the most likely state sequence for a given set of observations and a trained Hidden Markov Model.
                         Applied to part of speech tagging.</p>
-                    <p><strong>Naive Bayes Spam Filter</strong> (Python) [CIS521] - Built the classic bag of words spam filtering model for Penn’s AI course.</p>
-                    <p><strong>Sudoku Solver</strong> (Python) [CIS521] - Implemented the Arc Consistency Algorithm (#3) with backtracking to build an algorithm that can solve expert level sudoku problems.</p>
+                    <p><strong>Naive Bayes Spam Filter</strong> (Python) [CIS521]<br>Built the classic bag of words spam filtering model for Penn’s AI course.</p>
+                    <p><strong>Sudoku Solver</strong> (Python) [CIS521]<br>Implemented the Arc Consistency Algorithm (#3) with backtracking to build an algorithm that can solve expert level sudoku problems.</p>
 
                 </div>
 
                 <!-- <p>General</p>
                 <div class="sub-projects">
-                    <p><strong>Machine Learning Models from Scratch</strong> (Octave, Python) - In order to better understand the applications of different models, I’ve implemented perceptrons, SVMs, Neural Networks, etc.</p>
+                    <p><strong>Machine Learning Models from Scratch</strong> (Octave, Python)<br>In order to better understand the applications of different models, I’ve implemented perceptrons, SVMs, Neural Networks, etc.</p>
                 </div> -->
 
                 <h3 id="distributedsystems">Distributed Systems</h3>
 
-                <p><strong>SMTP Server</strong> (C++) [CIS505] - A multithreaded SMTP server, which can be used to send emails using any mail client.</p>
-                <p><strong>POP3 Server</strong> (C++) [CIS505] - A multithreaded POP3 server, which can be used to receive emails.</p>
-                <p><strong>IP, TCP and UDP Protocol Implementations</strong> (Python) [CIS553] - Wrote a program that parses and interprets captured Ethernet traffic containing IP datagrams.</p>
+                <p><strong>SMTP Server</strong> (C++) [CIS505]<br>A multithreaded SMTP server, which can be used to send emails using any mail client.</p>
+                <p><strong>POP3 Server</strong> (C++) [CIS505]<br>A multithreaded POP3 server, which can be used to receive emails.</p>
+                <p><strong>IP, TCP and UDP Protocol Implementations</strong> (Python) [CIS553]<br>Wrote a program that parses and interprets captured Ethernet traffic containing IP datagrams.</p>
 
                 <h3 id="web">Web</h3>
 
                 <p><em>Visual Portfolio Available Upon Request</em></p>
-                <p><strong>Calder</strong> (MongoDB, D3.js, Meteor) - Led a team in the design and implementation of a data visualization platform for artists.</p>
-                <p><strong>Lucid Asset Management</strong> (HTML/CSS, Photoshop) - Static website &amp; logo design for a financial firm.</p>
-                <p><strong>Roy Cho</strong> (Wordpress) - Web platform for a New Jersey congressional candidate</p>
-                <p><strong>Glenn Markman Foundation</strong> (HTML/CSS) - Website, email campaigns, and event registration for a foundation that funds artistic and athletic programs in NYC.</p>
-                <p><strong>Women of Milot</strong> (HTML/CSS, Photoshop) - E-commerce website and branding consulting for a Haiti based charity focused on women’s entrepreneurship.</p>
-                <p><strong>KHIRY</strong> (HTML/CSS, Javascript) - Web presence for jewelry inspired by the African Diaspora</p>
+                <p><strong>Calder</strong> (MongoDB, D3.js, Meteor)<br>Led a team in the design and implementation of a data visualization platform for artists.</p>
+                <p><strong>Lucid Asset Management</strong> (HTML/CSS, Photoshop)<br>Static website &amp; logo design for a financial firm.</p>
+                <p><strong>Roy Cho</strong> (Wordpress)<br>Web platform for a New Jersey congressional candidate</p>
+                <p><strong>Glenn Markman Foundation</strong> (HTML/CSS)<br>Website, email campaigns, and event registration for a foundation that funds artistic and athletic programs in NYC.</p>
+                <p><strong>Women of Milot</strong> (HTML/CSS, Photoshop)<br>E-commerce website and branding consulting for a Haiti based charity focused on women’s entrepreneurship.</p>
+                <p><strong>KHIRY</strong> (HTML/CSS, Javascript)<br>Web presence for jewelry inspired by the African Diaspora</p>
                 <p><strong>Mugshot</strong> (HTML/CSS, Photoshop)- Technical consulting and web development for a photography exhibition and magazine aimed at reframing coffee as part of one’s life story.</p>
-                <p><strong>LazyDonor</strong> (Chrome Extension) - Built a user friendly productivity extension that generates donations for local charities.</p>
+                <p><strong>LazyDonor</strong> (Chrome Extension)<br>Built a user friendly productivity extension that generates donations for local charities.</p>
 
                 <h3 id="mobile">Mobile</h3>
 
-                <p><strong>Duty Reporting</strong> (Java / Android) [CIS350] - Commissioned by the Hospital of the University of Pennsylvania to make app that simplifies the duty hour reporting process for residents and program directors.</p>
+                <p><strong>Duty Reporting</strong> (Java / Android) [CIS350]<br>Commissioned by the Hospital of the University of Pennsylvania to make app that simplifies the duty hour reporting process for residents and program directors.</p>
 
                 <h3 id="operatingsystems">Operating Systems</h3>
 
-                <p><strong>Mini Unix Operating System</strong> (C) [CIS380] - a priority scheduler, flat file system, and a command interpreter with user shell interactions.</p>
-                <p><strong>Superscalar Processor from Scratch</strong> (Verilog) [CIS371] - Built a dual-issue, in-order superscalar processor with a bypassed register file, arithmetic-logic unit and branching logic.</p>
+                <p><strong>Mini Unix Operating System</strong> (C) [CIS380]<br>a priority scheduler, flat file system, and a command interpreter with user shell interactions.</p>
+                <p><strong>Superscalar Processor from Scratch</strong> (Verilog) [CIS371]<br>Built a dual-issue, in-order superscalar processor with a bypassed register file, arithmetic-logic unit and branching logic.</p>
 
                 <h3 id="vr">VR</h3>
 
-                <p><strong>WebVR Controller</strong> (JS) [CIS568] - Built a small raspberry pi controller that pairs with AFrame WebVR for interactive experiences.</p>
-                <p><strong>Arrow Racing</strong> (C++ &amp; Unreal Engine) [CIS568] - A multiplayer racing / shooting game designed to test realistic bow and arrow mechanics for the HTC Vive.</p>
-                <p><strong>MagicMuffin</strong> (C++ &amp; Unreal Engine) [CIS568] - An interactive virtual reality experience for the HTC Vive that uses intuitive signaling to make it easy to play and the assets are procedurally generated from music.</p>
+                <p><strong>WebVR Controller</strong> (JS) [CIS568]<br>Built a small raspberry pi controller that pairs with AFrame WebVR for interactive experiences.</p>
+                <p><strong>Arrow Racing</strong> (C++ &amp; Unreal Engine) [CIS568]<br>A multiplayer racing / shooting game designed to test realistic bow and arrow mechanics for the HTC Vive.</p>
+                <p><strong>MagicMuffin</strong> (C++ &amp; Unreal Engine) [CIS568]<br>An interactive virtual reality experience for the HTC Vive that uses intuitive signaling to make it easy to play and the assets are procedurally generated from music.</p>
             </div>
         </div>
         <div class="col-1-3 image-list">
@@ -274,6 +287,7 @@
       <img src="img/montana-squad.jpg" />
       <img src="img/me-and-scott.jpg" />
     </div>
+  </div>
 </body>
 
 </html>
